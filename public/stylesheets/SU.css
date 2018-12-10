@@ -1,0 +1,110 @@
+body {
+  margin:0px;
+  height:100vh;
+  background:#f8f8f8;
+  font-family:Helvetica;
+  display:flex;
+  font-size:14px;
+  align-items:center;
+  justify-content:center;
+}
+
+/** 
+
+Main container 
+
+Flexbox is used for the container so that the two sides (left and right), are side by side instead of on top of each other
+
+**/
+
+main {
+  width:50%;
+  height:64vh;
+  background:white;
+  display:flex;
+  flex-wrap:wrap; /* this is needed so that the content will wrap around the container instead of stretching outside of it */
+}
+
+
+
+.left, .right {
+  width:50%; /* this is at 50% so that the two sides are split down the middle */
+}
+
+/** 
+
+Left side
+
+Flexbox is used here so that the sign up and images are in the center of the left div
+
+**/
+.left {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content:center;
+}
+
+/* this is the image above the words "sign up" */
+.left img {
+  width:80px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  border-radius:100%;
+}
+
+/* this is the fake form. There is no real input here, just a p tag styled to look like one */ 
+.left input {
+  margin:10px;
+  width:60%;
+  color:rgba(0,0,0,.68);
+  font-size:.88em;
+  padding:10px 14px;
+  background:#eee;
+  border-radius:30px;
+}
+
+.left h1 {
+  width:100%;
+  text-align:center;
+}
+
+/** 
+
+Right side
+
+overflow: hidden is used here so that the image does not go outside of the container. Flex box is not needed for this side.
+
+**/
+
+.right{
+  overflow:hidden;
+}
+
+.right img {
+  width:100%;
+}
+
+@media only screen and (max-height: 600px) {
+  main {
+    min-height:80vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  main {
+    height:auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .left, .right {
+    width:100%;
+  }
+  
+  .right {
+    display:none;
+  }
+}

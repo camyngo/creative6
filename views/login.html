@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="login" class="form-container">
+        <div class="login-header" class="form-header">
+            <h1>Login</h1>
+        </div>
+        <form method="POST" action="/login">
+            <center>
+            <h3>Username:</h3>
+            <input type="text" id="username" name="username" placeholder="Username" /><br>
+            <h3>Password:</h3>
+            <input type="password" id="password" name="password" placeholder="Password" />
+            <br>
+            <input type="submit" id="login" value="Login" class="login-button" />
+            <br>
+            <a id="signUpLink" href="/signup">Sign Up!</a>
+            <hr>
+            <span id="loginMsg">
+            <%= msg %>
+            </span>
+            <br>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>
