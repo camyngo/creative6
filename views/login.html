@@ -5,6 +5,39 @@
     <title>User Login and Sessions</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <!--authentification sign in with google-->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD_OrTOP-cVU8lryVOnCbNCgeTKrB4oqMk",
+            authDomain: "sign-in-5848e.firebaseapp.com",
+            databaseURL: "https://sign-in-5848e.firebaseio.com",
+            projectId: "sign-in-5848e",
+            storageBucket: "sign-in-5848e.appspot.com",
+            messagingSenderId: "541410893166"
+        };
+        firebase.initializeApp(config);
+
+        function google() {
+            function newlogin(user) {
+                if (user) {
+                    // user is signed in
+                    app(user);
+                }
+                else {
+                    var provider = new firebase.auth.GoogleAuthProvider();
+                    firebase.auth().signInWithRedirect(provider);
+                }
+            }
+
+            firebase.auth().onAuthStateChanged(newlogin);
+        }
+
+        function app(user) {
+            document.getElementById("clientName").innerHTML = user.displayName;
+        }
+    </script>
 </head>
 
 <body>
@@ -14,22 +47,23 @@
         </div>
         <form method="POST" action="/login">
             <center>
-            <h3>Username:</h3>
-            <input type="text" id="username" name="username" placeholder="Username" /><br>
-            <h3>Password:</h3>
-            <input type="password" id="password" name="password" placeholder="Password" />
-            <br>
-            <input type="submit" id="login" value="Login" class="login-button" />
-            <br>
-            <a id="signUpLink" href="/signup">Sign Up!</a>
-            <hr>
-            <span id="loginMsg">
+                <h3>Username:</h3>
+                <input type="text" id="username" name="username" placeholder="Username" /><br>
+                <h3>Password:</h3>
+                <input type="password" id="password" name="password" placeholder="Password" />
+                <br>
+                <input type="submit" id="login" value="Login" class="login-button" />
+                <br>
+                <a id="signUpLink" href="/signup">Sign Up!</a>
+                <hr>
+                <span id="loginMsg">
             <%= msg %>
             </span>
-            <br>
+                <br>
             </center>
         </form>
     </div>
+        <center><img onclick="google()" width="50" height="50" src="https://img.icons8.com/color/1600/google-plus-squared.png"></center>
 </body>
 
 </html>

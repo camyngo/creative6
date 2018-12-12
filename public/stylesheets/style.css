@@ -8,10 +8,14 @@ a {
 }
 
 body {
-  background:url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
   margin:0px;
   font-family: 'Ubuntu', sans-serif;
 	background-size: 100% 110%;
+	background: url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h1, h2, h3, h4, h5, h6, a {
   margin:0; padding:0;

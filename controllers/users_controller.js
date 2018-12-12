@@ -74,6 +74,7 @@ exports.updateUser = function(req, res) {
     .exec(function(err, user) {
       user.set('email', req.body.email);
       user.set('color', req.body.color);
+      user.set('toy', req.body.toy);
       user.save(function(err) {
         if (err) {
           res.sessor.error = err;
@@ -81,6 +82,7 @@ exports.updateUser = function(req, res) {
         else {
           req.session.msg = 'User Updated.';
           req.session.color = req.body.color;
+          req.session.toy = req.body.toy;
         }
         res.redirect('/user');
       });

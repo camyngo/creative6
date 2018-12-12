@@ -16,11 +16,14 @@
             <%= username %>
         </h2>
         <a id="logoutLink" href="/logout">Logout</a>&nbsp
-        <a id="editLink" href="/user">Edit User</a>
-        <p>Amazone shopping:
-        <a href="http://18.219.88.251:3003/customer.html">
+        <a id="editLink" href="/user">Update Profile and Preferences</a>
+        <p>Pet store:
+        <a href="http://18.219.88.251:3004/customer.html">
           <span class="glyphicon glyphicon-shopping-cart"></span>
         </a>
+        <br>
+        <h3><%= username %>'s Preferences</h3>
+        <h4>Favorite Pet: <%= color%></h4>
       </p>
     </div>
     <hr>
@@ -28,6 +31,7 @@
         <%= msg %>
     </span>
     <hr>
+    
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>
 </body>

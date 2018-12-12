@@ -1,244 +1,194 @@
 nohup: ignoring input
 before / Route
 Connected
-(node:6705) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:1245) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
 / Route
 Session {
   cookie: 
    { path: '/',
-     _expires: 2019-01-07T15:03:21.865Z,
+     _expires: 2019-01-10T09:10:50.794Z,
      originalMaxAge: 2628000000,
-     httpOnly: true } }
+     httpOnly: true },
+  msg: 'Access denied!' }
 / Route else user
-[0mGET / [36m302 [0m13.599 ms - 56[0m
+[0mGET / [36m302 [0m15.670 ms - 56[0m
 /login Route
-[0mGET /login [32m200 [0m7.292 ms - 1077[0m
-[0mGET /stylesheets/style.css [36m304 [0m3.581 ms - -[0m
+[0mGET /login [36m304 [0m7.578 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.560 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-10T16:54:55.538Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'Access denied!' }
+/ Route else user
+[0mGET / [36m302 [0m2.684 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m1.385 ms - 1077[0m
+[0mGET /stylesheets/style.css [32m200 [0m5.265 ms - 1768[0m
+/login Route
+[0mGET /login [36m304 [0m0.865 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.116 ms - -[0m
+/login Route
+[0mGET /login [36m304 [0m0.887 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.391 ms - -[0m
+/login Route
+[0mGET /login [36m304 [0m1.309 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.704 ms - -[0m
+/login Route
+[0mGET /login [36m304 [0m1.411 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.916 ms - -[0m
+/signup Route
+[0mGET /signup [32m200 [0m1.537 ms - 1562[0m
+[0mGET /stylesheets/SU.css [32m200 [0m1.560 ms - 1791[0m
 login
 { _id: 5c08bfcbdf5c1a76341aa077,
   username: 'camyngo',
   hashed_password: 'Cx8jKWSYSsu6BQD59AjPJaqwqCfTLyRlC+YnSATSgEE=',
   email: 'NGO.CAMILA@GMAIL.COM',
   __v: 0 }
-[0mPOST /login [36m302 [0m33.648 ms - 46[0m
+[0mPOST /login [36m302 [0m44.527 ms - 46[0m
 / Route
 Session {
   cookie: 
    { path: '/',
-     _expires: 2019-01-07T15:04:22.520Z,
+     _expires: 2019-01-11T08:26:23.252Z,
      originalMaxAge: 2628000000,
      httpOnly: true },
   user: '5c08bfcbdf5c1a76341aa077',
   username: 'camyngo',
   msg: 'Authenticated as camyngo' }
 / Route if user
-[0mGET / [36m304 [0m2.687 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m2.454 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m2.676 ms - -[0m
-[0mGET /user/profile [36m304 [0m4.803 ms - -[0m
+[0mGET / [32m200 [0m1.878 ms - 1230[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.323 ms - -[0m
+[0mGET /javascripts/my_app.js [32m200 [0m2.303 ms - 400[0m
+[0mGET /user/profile [32m200 [0m3.934 ms - 159[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-11T08:26:24.224Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c08bfcbdf5c1a76341aa077',
+  username: 'camyngo',
+  msg: 'Authenticated as camyngo' }
+/ Route if user
+[0mGET / [32m200 [0m1.563 ms - 1230[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.917 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.649 ms - -[0m
+[0mGET /user/profile [36m304 [0m2.197 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-11T08:28:47.950Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c08bfcbdf5c1a76341aa077',
+  username: 'camyngo',
+  msg: 'Authenticated as camyngo' }
+/ Route if user
+[0mGET / [32m200 [0m1.388 ms - 1227[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.919 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.937 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.501 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-11T08:29:12.389Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c08bfcbdf5c1a76341aa077',
+  username: 'camyngo',
+  msg: 'Authenticated as camyngo' }
+/ Route if user
+[0mGET / [32m200 [0m2.187 ms - 1220[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.919 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.775 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.864 ms - -[0m
 /login Route
-[0mGET /login [31m500 [0m1.541 ms - 46[0m
+[0mGET /login [31m500 [0m2.828 ms - 46[0m
 Error: Can't set headers after they are sent.
     at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
-    at ServerResponse.header (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:767:10)
-    at ServerResponse.send (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:170:12)
-    at done (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:1004:10)
-    at tryHandleCache (/home/ec2-user/environment/lab6/node_modules/ejs/lib/ejs.js:257:5)
-    at View.exports.renderFile [as engine] (/home/ec2-user/environment/lab6/node_modules/ejs/lib/ejs.js:482:10)
-    at View.render (/home/ec2-user/environment/lab6/node_modules/express/lib/view.js:135:8)
-    at tryRender (/home/ec2-user/environment/lab6/node_modules/express/lib/application.js:640:10)
-    at EventEmitter.render (/home/ec2-user/environment/lab6/node_modules/express/lib/application.js:592:3)
-    at ServerResponse.render (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:1008:7)
-    at /home/ec2-user/environment/lab6/app.js:59:7
-    at Layer.handle_error (/home/ec2-user/environment/lab6/node_modules/express/lib/router/layer.js:71:5)
-    at trim_prefix (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:315:13)
-    at /home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:335:12)
-    at next (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:275:10)
+    at ServerResponse.header (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/response.js:170:12)
+    at done (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/response.js:1004:10)
+    at tryHandleCache (/home/ec2-user/environment/lab6/creative6/node_modules/ejs/lib/ejs.js:257:5)
+    at View.exports.renderFile [as engine] (/home/ec2-user/environment/lab6/creative6/node_modules/ejs/lib/ejs.js:482:10)
+    at View.render (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/application.js:640:10)
+    at EventEmitter.render (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/response.js:1008:7)
+    at /home/ec2-user/environment/lab6/creative6/app.js:59:7
+    at Layer.handle_error (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/router/index.js:315:13)
+    at /home/ec2-user/environment/lab6/creative6/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ec2-user/environment/lab6/creative6/node_modules/express/lib/router/index.js:275:10)
 / Route
 Session {
   cookie: 
    { path: '/',
-     _expires: 2019-01-07T15:06:49.435Z,
+     _expires: 2019-01-11T09:04:13.312Z,
      originalMaxAge: 2628000000,
      httpOnly: true },
-  user: '5c08bfcbdf5c1a76341aa077',
-  username: 'camyngo',
-  msg: 'Authenticated as camyngo' }
+  user: '5c0c0d2137a1ab1a31d6b879',
+  username: 'meow',
+  msg: 'Authenticated as meow' }
 / Route if user
-[0mGET / [36m304 [0m2.291 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m1.563 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m3.216 ms - -[0m
-[0mGET /user/profile [36m304 [0m2.870 ms - -[0m
+[0mGET / [32m200 [0m1.199 ms - 1214[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.807 ms - 1768[0m
+[0mGET /javascripts/my_app.js [32m200 [0m1.915 ms - 400[0m
+[0mGET /user/profile [32m200 [0m1.669 ms - 154[0m
+[0mGET /favicon.ico [33m404 [0m0.948 ms - 201[0m
 /logout Route
-[0mGET /logout [36m302 [0m1.820 ms - 56[0m
+[0mGET /logout [36m302 [0m1.339 ms - 56[0m
 /login Route
-[0mGET /login [32m200 [0m0.863 ms - 1063[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.222 ms - -[0m
-/login Route
-[0mGET /login [36m304 [0m0.817 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.215 ms - -[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-07T15:06:58.426Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true } }
-/ Route else user
-[0mGET / [36m302 [0m3.932 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m1.064 ms - 1077[0m
-[0mGET /stylesheets/style.css [32m200 [0m3.723 ms - 1768[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-08T03:42:45.923Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true } }
-/ Route else user
-[0mGET / [36m302 [0m0.786 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m0.804 ms - 1077[0m
-[0mGET /stylesheets/style.css [32m200 [0m1.011 ms - 1768[0m
-[0mGET /favicon.ico [33m404 [0m1.067 ms - 201[0m
+[0mGET /login [32m200 [0m0.717 ms - 1063[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.962 ms - -[0m
 /signup Route
-[0mGET /signup [32m200 [0m1.126 ms - 1562[0m
-[0mGET /stylesheets/SU.css [32m200 [0m1.077 ms - 1791[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-06T18:25:37.853Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  msg: 'User Not Found.' }
-/ Route else user
-[0mGET / [36m302 [0m1.328 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m0.766 ms - 1077[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.831 ms - 1768[0m
-[0mGET /favicon.ico [33m404 [0m1.521 ms - 201[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.477 ms - -[0m
-/signup Route
-[0mGET /signup [32m200 [0m1.235 ms - 1562[0m
-[0mGET /stylesheets/SU.css [32m200 [0m0.545 ms - 1791[0m
+[0mGET /signup [32m200 [0m1.272 ms - 1548[0m
+[0mGET /stylesheets/SU.css [32m200 [0m0.873 ms - 1791[0m
 Begin exports.signup
 after new user exports.signup
 after hashing user exports.signup
 after email user exports.signup
 In exports.signup
-null
-[0mPOST /signup [36m302 [0m13.346 ms - 46[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-08T04:27:45.258Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  msg: 'Authenticated as meow',
-  user: '5c0c0d2137a1ab1a31d6b879',
-  username: 'meow' }
-/ Route if user
-[0mGET / [32m200 [0m1.888 ms - 1224[0m
-[0mGET /javascripts/my_app.js [32m200 [0m1.019 ms - 400[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.487 ms - 1768[0m
-[0mGET /user/profile [32m200 [0m4.752 ms - 154[0m
-/logout Route
-[0mGET /logout [36m302 [0m1.054 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m0.721 ms - 1063[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.469 ms - 1768[0m
-login
-{ _id: 5c0c0d2137a1ab1a31d6b879,
-  username: 'meow',
-  hashed_password: 'pmWkWSBCL51Bfkhn79xPuKBKHz//H6B+mY6G9/eieuM=',
-  email: 'asddfhrt@gmail.com',
-  __v: 0 }
-[0mPOST /login [36m302 [0m3.340 ms - 46[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-08T04:31:14.371Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  user: '5c0c0d2137a1ab1a31d6b879',
-  username: 'meow',
-  msg: 'Authenticated as meow' }
-/ Route if user
-[0mGET / [32m200 [0m0.961 ms - 1224[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.672 ms - 1768[0m
-[0mGET /javascripts/my_app.js [32m200 [0m0.420 ms - 400[0m
-[0mGET /user/profile [32m200 [0m2.347 ms - 154[0m
-/user Route
-[0mGET /user [31m500 [0m1.063 ms - 201[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.455 ms - 1768[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-08T04:31:27.058Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  user: '5c0c0d2137a1ab1a31d6b879',
-  username: 'meow',
-  msg: 'Authenticated as meow' }
-/ Route if user
-[0mGET / [32m200 [0m1.144 ms - 1224[0m
-[0mGET /javascripts/my_app.js [32m200 [0m0.415 ms - 400[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.400 ms - 1768[0m
-[0mGET /user/profile [32m200 [0m5.163 ms - 154[0m
-/user Route
-[0mGET /user [31m500 [0m1.490 ms - 201[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.442 ms - 1768[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-08T04:31:38.064Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  user: '5c0c0d2137a1ab1a31d6b879',
-  username: 'meow',
-  msg: 'Authenticated as meow' }
-/ Route if user
-[0mGET / [32m200 [0m1.144 ms - 1224[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.441 ms - 1768[0m
-[0mGET /javascripts/my_app.js [32m200 [0m0.427 ms - 400[0m
-[0mGET /user/profile [32m200 [0m2.057 ms - 154[0m
-[0mGET /robots.txt [33m404 [0m1.837 ms - 201[0m
-/login Route
-[0mGET /login [32m200 [0m1.703 ms - 1063[0m
-[0mGET /stylesheets/style.css [32m200 [0m2.721 ms - 1768[0m
-/signup Route
-[0mGET /signup [32m200 [0m3.272 ms - 1548[0m
-[0mGET /stylesheets/SU.css [32m200 [0m4.139 ms - 1791[0m
-[0mGET /robots.txt [33m404 [0m1.471 ms - 201[0m
-/login Route
-[0mGET /login [32m200 [0m2.250 ms - 1063[0m
-/signup Route
-[0mGET /signup [32m200 [0m1.881 ms - 1548[0m
-/login Route
-[0mGET /login [32m200 [0m5.174 ms - 1077[0m
-[0mGET /stylesheets/style.css [32m200 [0m0.958 ms - 1768[0m
-/signup Route
-[0mGET /signup [32m200 [0m1.222 ms - 1562[0m
-[0mGET /stylesheets/SU.css [32m200 [0m0.878 ms - 1791[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-10T08:58:34.640Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  msg: 'Access denied!' }
-/ Route else user
-[0mGET / [36m302 [0m1.590 ms - 56[0m
-/login Route
-[0mGET /login [31m500 [0m2.715 ms - 2005[0m
+{ MongoError: E11000 duplicate key error collection: auth.users index: username_1 dup key: { : "mimi" }
+    at Function.create (/home/ec2-user/environment/lab6/creative6/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/ec2-user/environment/lab6/creative6/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/ec2-user/environment/lab6/creative6/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/ec2-user/environment/lab6/creative6/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+  driver: true,
+  name: 'MongoError',
+  index: 0,
+  code: 11000,
+  errmsg: 'E11000 duplicate key error collection: auth.users index: username_1 dup key: { : "mimi" }' }
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+TypeError: Cannot set property 'error' of undefined
+    at /home/ec2-user/environment/lab6/creative6/controllers/users_controller.js:21:25
+    at /home/ec2-user/environment/lab6/creative6/node_modules/mongoose/lib/model.js:4533:16
+    at $__save.error (/home/ec2-user/environment/lab6/creative6/node_modules/mongoose/lib/model.js:431:16)
+    at /home/ec2-user/environment/lab6/creative6/node_modules/kareem/index.js:246:48
+    at next (/home/ec2-user/environment/lab6/creative6/node_modules/kareem/index.js:167:27)
+    at next (/home/ec2-user/environment/lab6/creative6/node_modules/kareem/index.js:169:9)
+    at Kareem.execPost (/home/ec2-user/environment/lab6/creative6/node_modules/kareem/index.js:217:3)
+    at _handleWrapError (/home/ec2-user/environment/lab6/creative6/node_modules/kareem/index.js:245:21)
+    at _cb (/home/ec2-user/environment/lab6/creative6/node_modules/kareem/index.js:304:16)
+    at /home/ec2-user/environment/lab6/creative6/node_modules/mongoose/lib/model.js:288:9
+    at /home/ec2-user/environment/lab6/creative6/node_modules/kareem/index.js:135:16
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       [0mGET /robots.txt [33m404 [0m1.413 ms - 1962[0m
 Error: Failed to lookup view "error" in views directory "/home/ec2-user/environment/lab6/views"
     at EventEmitter.render (/home/ec2-user/environment/lab6/node_modules/express/lib/application.js:580:17)
     at ServerResponse.render (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:1008:7)
@@ -248,34 +198,15 @@ Error: Failed to lookup view "error" in views directory "/home/ec2-user/environm
     at /home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:284:7
     at Function.process_params (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:335:12)
     at next (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:275:10)
-    at Layer.handle_error (/home/ec2-user/environment/lab6/node_modules/express/lib/router/layer.js:67:12)
-    at trim_prefix (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:315:13)
+    at /home/ec2-user/environment/lab6/app.js:48:3
+    at Layer.handle [as handle_request] (/home/ec2-user/environment/lab6/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:317:13)
     at /home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:284:7
     at Function.process_params (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:335:12)
     at next (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:275:10)
     at /home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:635:15
-    at IncomingMessage.next (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:260:14)
-    at done (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:1003:25)
-/login Route
-[0mGET /login [31m500 [0m0.961 ms - 2005[0m
-Error: Failed to lookup view "error" in views directory "/home/ec2-user/environment/lab6/views"
-    at EventEmitter.render (/home/ec2-user/environment/lab6/node_modules/express/lib/application.js:580:17)
-    at ServerResponse.render (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:1008:7)
-    at /home/ec2-user/environment/lab6/app.js:59:7
-    at Layer.handle_error (/home/ec2-user/environment/lab6/node_modules/express/lib/router/layer.js:71:5)
-    at trim_prefix (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:315:13)
-    at /home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:335:12)
-    at next (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:275:10)
-    at Layer.handle_error (/home/ec2-user/environment/lab6/node_modules/express/lib/router/layer.js:67:12)
-    at trim_prefix (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:315:13)
-    at /home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:335:12)
-    at next (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:275:10)
-    at /home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:635:15
-    at IncomingMessage.next (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:260:14)
-    at done (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:1003:25)
-[0mGET /customer [33m404 [0m0.873 ms - 1962[0m
+    at next (/home/ec2-user/environment/lab6/node_modules/express/lib/router/index.js:260:14)
+[0mGET /stylesheets/SU.css [33m404 [0m1.941 ms - 1962[0m
 Error: Failed to lookup view "error" in views directory "/home/ec2-user/environment/lab6/views"
     at EventEmitter.render (/home/ec2-user/environment/lab6/node_modules/express/lib/application.js:580:17)
     at ServerResponse.render (/home/ec2-user/environment/lab6/node_modules/express/lib/response.js:1008:7)
